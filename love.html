@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title><h1>Love Percentage Calculator</h1></title>
+    </head>
+    <body>
+        <script>
+            function calculateLovePercentage() {
+                //prompt the user to enter the first and second names
+                var name1 = prompt("Enter the first name: ");
+                var name2 = prompt("Enter the second name: ");
+
+                //Convert names to lowercase to make them case sensitive
+                name1 = names1.toLowerCase();
+                name2 = names2.toLowerCase();
+                
+                //Generate random numbers for each name
+                var n1 = Math.random();
+                n1 = Math.floor(n1 * 8) + 1;
+                var n2 = Math.random(); // generate a random decimal between 0 and 1
+                n2 = Math.floor(n2 * 8) + 1; //scale it to a random integer
+
+                //combine random numbers and calculate the love percentage
+                var lovePercentage = (n1 + n2) * 10;
+
+                //Display the love prcentage in the console
+                console.log("Their love percentage is " + lovePercentage + "%");
+
+
+                //Return the calculated love percentage
+                return lovePercentage;
+            }
+            //Call the function
+            var result = calculateLovePercentage();
+
+            //Display the result in the html
+            document.write("<h2>Love Percentage Result:</h2>");
+            document.write("<p>Their love percentage is " + result + "%</p>");
+        </script>
+    </body>
+</html>
