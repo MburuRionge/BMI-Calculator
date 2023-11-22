@@ -6,6 +6,7 @@
         <title><h1>Love Percentage Calculator</h1></title>
     </head>
     <body>
+
         <script>
             function calculateLovePercentage() {
                 //prompt the user to enter the first and second names
@@ -38,6 +39,17 @@
             //Display the result in the html
             document.write("<h2>Love Percentage Result:</h2>");
             document.write("<p>Their love percentage is " + result + "%</p>");
+        </script>
+
+        <label for="userName">Enter your name:</label>
+        <input type="text" id="userName">
+        <button onclick="showGreeting()">submit</button>
+        <script>
+            function showGreeting() {
+                var userName = document.getElementById("userName").value;
+                //Display a message using the entered name
+                console.log("Hello, " + userName + "!");
+            }
         </script>
     </body>
 </html>
